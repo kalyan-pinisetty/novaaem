@@ -1,0 +1,29 @@
+<sly data-sly-use.headercomponent="com.nova.core.core.models.NovaHeaderImpl">
+
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+<sly data-sly-use.headercomponent="com.nova.core.core.models.NovaHeaderImpl">
+
+
+      <a href="${headercomponent.pageheadinglink}" class="logo d-flex align-items-center">
+        <h1 class="d-flex align-items-center">${headercomponent.pageheading}</h1>
+      </a>
+
+<!-- <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i> .navbar -->
+
+      <nav id="navbar" class="navbar">  
+
+		<ul class="header-ul" data-sly-list.hl="${headercomponent.linkheader}">
+
+      		<li class="header-li"><a href="${hl.linkpath @ extension='html'}" >${hl.linktext}</a></li>
+    	</ul>
+   
+ </nav>
+
+<sly>
+
+</div> </header>
+

@@ -1,0 +1,31 @@
+<section id="recent-posts" class="recent-posts">
+<div class="container aos-init aos-animate">
+ <div class="section-header">
+<h2>Recent Blog Posts</h2>
+</div>
+
+
+<div class="row gy-5">
+<sly data-sly-use.model="com.nova.core.core.models.CourseModel">
+<sly data-sly-list.card="${model.contentfragmentvalues}">
+
+<div class="col-xl-3 col-md-6 aos-init aos-animate">
+<div class="post-box">
+<div class="post-img"><img src="${card.CardImg}" class="img-fluid" alt=""></div>
+<div class="meta">
+<span class="post-date">${card.CardDateTitle}</span>
+</div>
+<h3 class="post-title">${card.CardTitle}</h3>
+<p>${card.CardDescription}</p>
+<a href="${card.CardLink}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+</div>
+</div>
+
+</sly>
+</sly>
+
+</div>
+
+
+</div>
+</section>

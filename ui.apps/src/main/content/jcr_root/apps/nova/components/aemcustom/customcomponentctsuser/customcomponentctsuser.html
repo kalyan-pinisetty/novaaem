@@ -1,0 +1,29 @@
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientLib.css @ categories='nova.components.aemcustom.editor'}"></sly>
+
+<!-- Your component's HTML goes here -->
+
+<sly data-sly-call="${clientLib.js @ categories='nova.components.aemcustom.editor'}"></sly>
+
+<sly data-sly-use.model="com.nova.core.core.models.Custom">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 2px solid #333; padding: 10px; border-radius: 10px;">
+        <div style="flex: 1; height: auto;">
+            <img src="${model.fileReference}" alt="Image" style="width: 100%; height: 100%; object-fit: cover;"/>
+        </div>
+        <div style="flex: 1; margin-left: 20px; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+            <p style="color: #008080;"><strong>Name:</strong> ${model.textfield}</p>
+            <p style="color: #4682B4;"><strong>Current Date:</strong>${ 'dd-MM-yy hh:mm:ss' @format=properties.date, timezone='IST'}</p>
+            <p style="color: #6A5ACD;"><strong>DOB:</strong> ${model.date}</p>
+            <p style="color: #40E0D0;"><strong>LinkedIn:</strong> ${model.pathbrowser}</p>
+            <p style="color: #20B2AA;"><strong>Gender:</strong> ${model.checkbox ? 'male' : 'Female'}</p>
+           <!-- <p style="color: #5F9EA0;"><strong>Yes or No:</strong> ${model.radiobutton}</p> -->
+            <p style="color: #7FFFD4;"><strong>Country:</strong> ${model.dropdown}</p>
+            <ul data-sly-list.ex="${model.experience}" style="color: #48D1CC;">
+                <li><strong>Company: </strong>${ex.company}</li>
+                <li><strong>Experience: </strong>${ex.exp} Years </li>
+            </ul>
+            <p style="color: #00CED1;"><strong>Description:</strong> ${properties.description}</p>
+        </div>
+    </div>
+</sly>

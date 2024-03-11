@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <ContentTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Enter Heading"
+                                fieldDescription="Enter Heading"
+                                fieldLabel="Heading"
+                                name="./heading"/>
+                            <headinglink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                emptyText="Enter Heading Link"
+                                fieldDescription="Provide Heading Link"
+                                fieldLabel="Heading Link"
+                                name="./headinglink"/>
+                            <subtext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Enter Subtext"
+                                fieldDescription="Enter Subtext"
+                                fieldLabel="Subtext"
+                                name="./subtext"/>
+                            <iconcards
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="iconcards"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Icons">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./iconcards">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <icon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Select icon"
+                                            fieldDescription="Select icon"
+                                            fieldLabel="Icon"
+                                            name="./icon"/>
+                                        <iconlink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            emptyText="Enter Link"
+                                            fieldDescription="Provide Link"
+                                            fieldLabel="Link"
+                                            name="./iconlink"/>
+                                    </items>
+                                </field>
+                            </iconcards>
+                        </items>
+                    </ContentTab>
+                    <LinksTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Useful Links"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <useful
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Enter Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./useful">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <linktext
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Enter Link Title"
+                                            fieldDescription="Provide Link Title"
+                                            fieldLabel="Link Title"
+                                            name="./linktext"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            emptyText="Enter Link"
+                                            fieldDescription="Provide Link"
+                                            fieldLabel="Link"
+                                            name="./link"/>
+                                    </items>
+                                </field>
+                            </useful>
+                        </items>
+                    </LinksTab>
+                    <ServiceTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Our Services"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <services
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Enter Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./services">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <linktext
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Enter Link Title"
+                                            fieldDescription="Provide Link Title"
+                                            fieldLabel="Link Title"
+                                            name="./linktext"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            emptyText="Enter Link"
+                                            fieldDescription="Provide Link"
+                                            fieldLabel="Link"
+                                            name="./link"/>
+                                    </items>
+                                </field>
+                            </services>
+                        </items>
+                    </ServiceTab>
+                    <ContactTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Contact Us"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <address
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Enter Address"
+                                fieldDescription="Provide Address"
+                                fieldLabel="Address"
+                                name="./address"/>
+                            <phonenumber
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                emptyText="Enter Phone Number"
+                                fieldDescription="Provide Phone Number"
+                                fieldLabel="Phone Number"
+                                name="./phonenumber"/>
+                            <email
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                emptyText="Enter Email"
+                                fieldDescription="Provide Email"
+                                fieldLabel="Email"
+                                name="./email"/>
+                        </items>
+                    </ContactTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

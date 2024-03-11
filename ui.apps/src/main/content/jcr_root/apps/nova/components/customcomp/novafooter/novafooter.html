@@ -1,0 +1,74 @@
+<footer id="footer" class="footer">
+<div data-sly-use.demo="com.nova.core.core.models.NovaFooter">
+<div class="footer-content">
+      <div class="container">
+        <div class="row gy-4">
+          
+            
+	<div class="col-lg-5 col-md-12 footer-info">
+            <a href="${demo.headinglink}" class="logo d-flex align-items-center">
+              <span>${demo.heading}</span>
+            </a>
+            <p>${demo.subtext}</p>
+
+<div class="social-links d-flex  mt-3">
+
+<sly data-sly-list.a1="${demo.iconcards}">
+                <a href="${a1.iconlink}" class="twitter"><i class="${a1.icon}"></i></a>
+                </sly>
+           </div>
+</div>
+
+
+
+            
+
+
+           <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+			   <ul data-sly-list.a2="${demo.useful}"> 
+			   <li><i class="bi bi-dash"></i><a href="${a2.link}">${a2.linktext}</a></li>
+	           </ul>
+
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+
+			   <ul data-sly-list.a3="${demo.services}"> 
+			   <li><i class="bi bi-dash"></i><a href="${a3.link}">${a3.linktext}</a></li>
+	           </ul>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              ${demo.address}<br>
+              <strong>Phone:</strong>${demo.phonenumber}<br>
+              <strong>Email:</strong>${demo.email}<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+        <div class="copyright">
+          © Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="footer-kalyan" >Kalyan from india</div>
+
+
+</footer>
+

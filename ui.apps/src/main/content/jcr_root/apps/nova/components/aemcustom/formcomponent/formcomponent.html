@@ -1,0 +1,15 @@
+<sly data-sly-test="${wcmmode.edit}">
+<div data-emptytext="Form Component" class="cq-placeholder"></div>
+</sly>
+<sly data-sly-use.model="com.nova.core.core.models.FormModel">
+    <form method="POST" action="${model.action}">
+        <label>Name:</label>
+        <input type="text" name="name" value="${model.name}"><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" value="${model.email}"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</sly>
+

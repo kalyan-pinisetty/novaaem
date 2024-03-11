@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/nova/clientlibs"/>
+    <filter root="/apps/nova/components"/>
+    <filter root="/apps/nova/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,83 @@
+<link href="/apps/nova/clientlibs/clientlib-dependencies/css/bootstrap.min.css" rel="stylesheet">
+<link href="/apps/nova/clientlibs/clientlib-dependencies/css/bootstrap-icons.css" rel="stylesheet">
+
+<link href="/apps/nova/clientlibs/clientlib-dependencies/css/aos.css" rel="stylesheet">
+  <link href="/apps/nova/clientlibs/clientlib-dependencies/css/glightbox.min.css" rel="stylesheet">
+  <link href="/apps/nova/clientlibs/clientlib-dependencies/css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/apps/nova/clientlibs/clientlib-dependencies/css/remixicon.css" rel="stylesheet">
+
+
+<link href="/apps/nova/clientlibs/clientlib-dependencies/resources/bootstrap-icons.woff" rel="stylesheet">
+<link href="/apps/nova/clientlibs/clientlib-dependencies/resources/bootstrap-icons.woff2" rel="stylesheet">
+
+<sly data-sly-use.card="com.nova.core.core.models.Service">
+ <section id="services-list" class="services-list">
+ <div class="container">
+
+<div class="section-header">
+          <h2>Our Services</h2>
+
+        </div>
+  <div data-sly-list.List="${card.services}" class="row">
+
+<div class="col-lg-4 col-md-6 service-item d-flex">
+         <div class="icon flex-shrink-0"><i class="${List.icon}" style="color: #f57813;"></i></div>
+         <div>
+            <h4 class="title"><a href="" class="stretched-link">${List.title}</a></h4>
+            <p class="description">${List.description}</p>
+          </div>
+          </div>
+
+</div>
+
+</div>
+ </sly>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<sly data-sly-use.card="com.nova.core.core.models.Service">
+ <div data-sly-list.List="${card.services}" class="row">
+ <i class="${List.icon}" style="color: #f57813;"></i>
+ <a href="#" class="stretched-link">${List.title}</a>
+ <p class="description">${List.description}</p>
+ </div>
+</sly>
+
+
+
+
+<div>
+<sly data-sly-use.card="com.nova.core.core.models.Service">
+        <div data-sly-list.List="${card.services}">
+           <i ${List.icon}"></i></div>
+           <a href="">${List.title}</a></h4>
+           <p> ${List.description}</p>
+          </div>
+	   </sly>
+      </div>-->

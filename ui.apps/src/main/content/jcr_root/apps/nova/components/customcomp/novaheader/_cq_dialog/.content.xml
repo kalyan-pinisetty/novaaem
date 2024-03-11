@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <pageheading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Enter Page Heading"
+                        fieldDescription="Enter Page Heading"
+                        fieldLabel="Page Heading"
+                        name="./pageheading"/>
+                    <pageheadinglink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Enter Page Heading Link"
+                        fieldDescription="Provide Page Heading Link"
+                        fieldLabel="Page Heading Link"
+                        name="./pageheadinglink"/>
+                    <linkheader
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Navigation Bar">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./linkheader">
+                            <items jcr:primaryType="nt:unstructured">
+                                <linkpath
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                    emptyText="Enter Link"
+                                    fieldDescription="Enter Link"
+                                    fieldLabel="Link"
+                                    name="./linkpath"/>
+                                <linktext
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    emptyText="Enter Link Text"
+                                    fieldDescription="Enter Link Text"
+                                    fieldLabel="Link Text"
+                                    name="./linktext"/>
+                            </items>
+                        </field>
+                    </linkheader>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

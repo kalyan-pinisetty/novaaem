@@ -1,0 +1,11 @@
+<section id="features" class="features">
+<div class="container">
+<sly data-sly-use.cts="${'com.nova.core.core.models.Ctsu' @ value='ramu'}">
+		<p>${cts.stringDob}</p>
+		<p>${cts.stringName}</p>
+		<p>${cts.stringEmail}</p>
+<p class="getting-page-title-by-using-script-variable">${cts.titlePage}</p>
+</sly>
+<sly data-sly-test="${wcmmode.edit}">
+<div data-emptytext="CTS USERComponent" class="cq-placeholder"></div>
+</sly>
